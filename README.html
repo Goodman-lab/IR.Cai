@@ -1,0 +1,90 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h1 id="ir-cai">IR.Cai</h1>
+<p>(c) Jonathan Goodman, Benji Rowlands<br>2021-2024<br>jmg11@cam.ac.uk<br>University of Cambridge  </p>
+<h2 id="overview">Overview</h2>
+<p>This repository contains an implementation of the IR.Cai algorithm described in
+the paper &quot;Towards automatically verifying chemical structures: the powerful
+combination of $^1$H NMR and IR spectroscopy&quot;. </p>
+<p>The script is contained in <code>cai.py</code>. An example input file, with parameters set
+to the values used to obtain the results in the paper, is contained in
+<code>sample_input.txt</code>.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Operating system: this software has been tested on macOS Sonoma 14.5. It
+should work on other operating systems, but has not been tested on them.</li>
+<li>Python version: this software was developed using Python 3.12.</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>To run this software, ensure you have Python 3.12 installed along with the
+following package:</p>
+<ul>
+<li><code>matplotlib</code> (version 3.9.0)</li>
+</ul>
+<p>To configure the environment correctly, follow the following steps:</p>
+<ol>
+<li><p><strong>Install Python</strong>: Ensure you have Python 3.12 installed. You can
+download it from the <a href="https://www.python.org/downloads/release/python-3124/">official Python
+website</a>.</p>
+</li>
+<li><p><strong>Create a virtual environment</strong>:</p>
+<pre><code> python3.<span class="hljs-number">12</span> -m venv .venv
+ <span class="hljs-keyword">source</span> .venv<span class="hljs-regexp">/bin/</span>activate
+</code></pre></li>
+<li><p><strong>Activate the virtual environment and install the required package</strong>:</p>
+<pre><code> <span class="hljs-keyword">source</span> .venv<span class="hljs-regexp">/bin/</span>activate
+ pip install matplotlib==<span class="hljs-number">3.9</span>.<span class="hljs-number">0</span>
+</code></pre></li>
+</ol>
+<h2 id="usage">Usage</h2>
+<ol>
+<li><p><strong>Prepare your input file</strong>: The input file should contain sections for
+settings, experimental data files and calculation data files. Each section
+should be denoted by tags <code>&lt;Settings&gt;</code>, <code>&lt;Experiments&gt;</code> and
+<code>&lt;Calculations&gt;</code>, and each section should be closed with a tag of the form
+<code>&lt;/Settings&gt;</code>.</p>
+</li>
+<li><p><strong>Run the script</strong>: Execute the script from the command line with your input file as an argument.</p>
+<pre><code class="lang-bash"><span class="hljs-keyword">python</span> /path/<span class="hljs-keyword">to</span>/cai.<span class="hljs-keyword">py</span> your_input_file.txt
+</code></pre>
+</li>
+</ol>
+<h3 id="example-input-file">Example Input File</h3>
+<pre><code><span class="hljs-params">&lt;Settings&gt;</span>
+print_csv spectra scaling_factor summary
+minimum_wavenumber <span class="hljs-number">1250</span>
+maximum_wavenumber <span class="hljs-number">1600</span>
+defined_scaling_factor <span class="hljs-number">0.98</span>
+min_scale_factor <span class="hljs-number">0.95</span>
+temperature <span class="hljs-number">300</span>
+max_scale_factor <span class="hljs-number">1.0</span>
+optimise_scaling_factor False
+boltzmann_cutoff <span class="hljs-number">20.0</span>
+broadening <span class="hljs-number">12</span>
+save_path <span class="hljs-meta-keyword">/path/</span>to<span class="hljs-meta-keyword">/your/</span>save/file.csv (optional)
+<span class="hljs-params">&lt;/Settings&gt;</span>
+
+<span class="hljs-params">&lt;Experiments&gt;</span>
+<span class="hljs-meta-keyword">/path/</span>to<span class="hljs-meta-keyword">/your/</span>experimental<span class="hljs-meta-keyword">/data/</span>file.txt
+<span class="hljs-params">&lt;/Experiments&gt;</span>
+
+<span class="hljs-params">&lt;Calculations&gt;</span>
+<span class="hljs-meta-keyword">/path/</span>to<span class="hljs-meta-keyword">/your/</span>dir<span class="hljs-meta-keyword">/containing/</span>calculation/files
+<span class="hljs-params">&lt;/Calculations&gt;</span>
+</code></pre><h2 id="output">Output</h2>
+<p>The software generates the following outputs:</p>
+<ul>
+<li>A <code>.log</code> file containing detailed logs of the process.</li>
+<li>A <code>.csv</code> file with the experimental and calculated spectra data.</li>
+<li>A graph in <code>.pdf</code> format showing the experimental and calculated spectra.</li>
+<li>A summary output appended to a specified path.</li>
+</ul>
+<h2 id="example-data">Example data</h2>
+<p>Usage of the software can be demonstrated using the molecules from the test set
+in the paper. All of the necessary files are contained in the Apollo repository:
+<code>link to Apollo</code>. This folder contains its own README detailing how to reproduce
+the IR.Cai scores from the paper in conjunction with the IR.Cai script.</p>
+<h2 id="contact">Contact</h2>
+<p>For any questions or issues, please contact Jonathan Goodman at jmg11@cam.ac.uk.</p>
+</body></html>

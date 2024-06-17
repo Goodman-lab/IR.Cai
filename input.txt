@@ -1,0 +1,21 @@
+<Settings>
+print_csv spectra scaling_factor summary
+minimum_wavenumber 1250
+maximum_wavenumber 1600
+defined_scaling_factor 0.98
+min_scale_factor 0.95
+temperature 300
+max_scale_factor 1.0
+optimise_scaling_factor False
+boltzmann_cutoff 20.0
+broadening 12
+save_path /Users/benji/cai_refactor_testing/IR_high_hwhm_12.csv
+</Settings>
+
+<Experiments>
+/Users/benji/IR_calculations/Mol1/Experimental/Mol1_IR.txt
+</Experiments>
+
+<Calculations>
+/Users/benji/IR_calculations/Mol1/Mol1_0/Minimization_Selected_B3PW91_cc-pVTZ
+</Calculations>

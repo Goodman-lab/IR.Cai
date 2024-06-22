@@ -9,7 +9,7 @@ University of Cambridge
 
 This repository contains an implementation of the IR.Cai algorithm described in
 the paper "Towards automatically verifying chemical structures: the powerful
-combination of $^1$H NMR and IR spectroscopy". 
+combination of <sup>1</sup>H NMR and IR spectroscopy". 
 
 The script is contained in `cai.py`. An example input file, with parameters set
 to the values used to obtain the results in the paper, is contained in

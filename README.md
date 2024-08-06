@@ -93,7 +93,7 @@ The software generates the following outputs:
 ## Example data
 Usage of the software can be demonstrated using the molecules from the test set
 in the paper. All of the necessary files are contained in the Apollo repository:
-`https://doi.org/10.17863/CAM.110235`. This folder contains its own README detailing how to reproduce
+[Link to Apollo](https://doi.org/10.17863/CAM.110235). This folder contains its own README detailing how to reproduce
 the IR.Cai scores from the paper in conjunction with the IR.Cai script.
 
 ## Contact

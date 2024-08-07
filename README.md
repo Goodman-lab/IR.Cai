@@ -97,6 +97,8 @@ repository](https://doi.org/10.17863/CAM.110235). This folder contains its own
 README detailing how to reproduce the IR.Cai scores from the paper in
 conjunction with the IR.Cai script.
 
+Scripts to reproduce the SCC plots from the paper are also available [on GitHub](https://github.com/Goodman-lab/SCC).
+
 ## Contact
 
 For any questions or issues, please contact Jonathan Goodman at jmg11@cam.ac.uk.

@@ -42,6 +42,7 @@ To configure the environment correctly, follow the following steps:
     source .venv/bin/activate
     pip install matplotlib==3.9.0
     ```
+Expected install time: less than 1 minute.
 
 ## Usage
 
@@ -95,7 +96,7 @@ Usage of the software can be demonstrated using the molecules from the test set
 in the paper. All of the necessary files are contained in the [Apollo
 repository](https://doi.org/10.17863/CAM.110235). This folder contains its own
 README detailing how to reproduce the IR.Cai scores from the paper in
-conjunction with the IR.Cai script.
+conjunction with the IR.Cai script. Using the data from this repository, the IR.Cai scores from the paper can be obtained in roughly 10 minutes.
 
 Scripts to reproduce the SCC plots from the paper are also available [on GitHub](https://github.com/Goodman-lab/SCC).
 

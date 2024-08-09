@@ -100,6 +100,8 @@ conjunction with the IR.Cai script. Using the data from this repository, the IR.
 
 Scripts to reproduce the SCC plots from the paper are also available [on GitHub](https://github.com/Goodman-lab/SCC).
 
+Separately, all code and data necessary to reproduce the DP4* results from the paper may also be found [on GitHub](https://github.com/Goodman-lab/DP4-star)
+
 ## Contact
 
 For any questions or issues, please contact Jonathan Goodman at jmg11@cam.ac.uk.
